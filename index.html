@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <title>Calendar Generator</title>
+
+</head>
+
+<body class="bg-dark">
+
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#!"><i class="fal fa-atom"></i> Balmonte</a>
+    </nav>
+
+    <div class="d-block d-md-flex justify-content-md-around" style="margin-top: 7rem;">
+
+
+        <div class="card col-10 col-md-5 col-lg-4 mb-5 mb-lg-0 p-0 mx-auto">
+            <h3 class="card-header text-light text-center bg-info">
+                Calendar Generator
+            </h3>
+            <div class="card-body">
+                <div class="invisible mb-1" id="errorMessage" style="font-size: 14px; margin-top: -10px;">&#9432;
+                    <em>Please fill out all the fields!</em>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="year">Year: </label>
+                        <input type="number" class="form-control" id="year" placeholder="XXXX" min="1900">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="month">Month: </label>
+                        <select class="custom-select" id="month" required>
+                            <option selected value="">Select Month...</option>
+                            <option value="0">January</option>
+                            <option value="1">February</option>
+                            <option value="2">March</option>
+                            <option value="3">April</option>
+                            <option value="4">May</option>
+                            <option value="5">June</option>
+                            <option value="6">July</option>
+                            <option value="7">August</option>
+                            <option value="8">September</option>
+                            <option value="9">October</option>
+                            <option value="10">November</option>
+                            <option value="11">December</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-1  mr-md-2"><i class="fal fa-cog"></i>
+                        Generate</button>
+                    <button type="reset" class="btn btn-danger mr-1  mr-md-2"><i class="fal fa-redo"></i> Reset</button>
+                </form>
+                <div class="card-footer" style="margin-top: 22%;">
+                    &copy; Joshua Balmonte
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card col-10 col-md-5 p-0 mt-0 shadow mx-auto h-25">
+            <h3 id="year_and_month" class="card-header text-light text-center bg-danger">
+                Year, Month
+            </h3>
+            <div class="card-body row justify-content-center">
+                <div class="col-auto">
+                    <table class="table table-bordered text-center shadow table-responsive">
+                        <thead class="thead-light">
+                            <tr>
+                                <th>MON</th>
+                                <th>TUE</th>
+                                <th>WED</th>
+                                <th>THU</th>
+                                <th>FRI</th>
+                                <th>SAT</th>
+                                <th>SUN</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="main.js">
+    </script>
+</body>
+
+</html>
