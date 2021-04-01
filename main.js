@@ -48,4 +48,5 @@ function resetCalendar() {
         td.innerHTML = '&nbsp;'
     }
     document.querySelector('#errorMessage').classList.add('invisible')
+    document.querySelector('#year_and_month').textContent = 'Month Year'
 }
