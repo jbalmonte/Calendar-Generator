@@ -7,13 +7,12 @@ buttonSubmit.addEventListener('click', function (e) {
     let month = document.querySelector('#month').value
     let year = document.querySelector('#year').value
 
-    console.log(month, year)
     if (month == '' || year == '') {
 
         document.querySelector('#errorMessage').classList.remove('invisible')
         return;
     }
-    console.log('after', month, year)
+    
     resetCalendar()
     createCalendar(year, month)
 
